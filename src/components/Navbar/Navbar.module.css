@@ -1,0 +1,54 @@
+.nav {
+    grid-area: nav;
+    background-color: black;
+    border-right: 5px solid white;
+    padding: 20px;
+}
+
+.item a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.item a.active {
+    color: orange;
+    font-size: 35px;
+    display: flex;
+    padding: 15px 0px 15px 0px;
+}
+
+.item h1{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.frends{
+    display: flex;
+    
+}
+
+.frend{
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frend img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    align-items: center;
+    border: 3.5px solid orange;
+    box-sizing: border-box;
+}
+
+.frend p{
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+

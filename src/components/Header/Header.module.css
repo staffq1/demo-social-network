@@ -1,0 +1,20 @@
+.header {
+    grid-area: header;
+    background-color: black;
+    border-bottom: 5px solid white;
+    display: flex;
+    box-sizing: border-box;  
+    justify-content: space-between
+}
+
+.header img {
+    width: inherit;
+}
+
+.loginBlock{
+    color: white;
+}
+
+.loginBlock a{
+    color: inherit;
+}

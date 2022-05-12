@@ -1,0 +1,12 @@
+.photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.selected{
+    width: 97px;
+    word-break: break-all;
+    overflow: hidden;
+    
+}
