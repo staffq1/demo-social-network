@@ -2,7 +2,7 @@ import React, {Suspense, useEffect } from 'react'
 import './App.css';
 import HeaderContainer from './components/Header/HeaderContainer';
 import Navbar from './components/Navbar/Navbar';
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, HashRouter } from "react-router-dom"
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
@@ -13,7 +13,6 @@ import { connect } from 'react-redux';
 import { initializeApp } from './redux/app-reducer';
 import Preloader from './components/commen/Preloader/Preloader';
 
-import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/redux-store';
 
@@ -68,11 +67,11 @@ const AppContainer = connect(mapStateToProps, { initializeApp })(App)
 
 const ProjectApp = (props) => {
 
-  return <BrowserRouter>
+  return <HashRouter>
     <Provider store={store}>
       <AppContainer />
     </Provider>
-  </BrowserRouter>
+  </HashRouter>
 }
 
 export default ProjectApp
